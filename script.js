@@ -60,7 +60,7 @@ addBookForm.addEventListener('submit', addBookToTheLibrary, false);
 
 function addBookToTheLibrary(event) {
     event.preventDefault();
-    0
+    
     if(title.value == "" || author.value == "" || pages.value == "")
     {
         alert("Please complete all form fields");
