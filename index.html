@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pridi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
+
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header-nav">
+            <div>Library</div>
+        </div>
+        <div class="main-body">
+            <button class="add-book-btn">+ Add Book</button>
+            <div class="add-book-form" id="add-book-form">
+                <div class="book-form-header">
+                    Add New Book
+                </div>
+                <div class="book-form-body">
+                    <form>
+                        <div>
+                            <input type="text" id="title" placeholder="Title">
+                        </div>
+
+                        <div>
+                            <input type="text" id="author" placeholder="Author">
+                        </div>
+                        <div>
+                            <input type="number" id="pages" placeholder="Pages" min="1">
+                        </div>
+                        <div class="add-book-check">
+                            <label for="hasRead">Have you read it?</label>
+                            <input type="checkbox" name="hasRead" id="hasRead">
+                        </div>
+                        <div class="form-button">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="book-library-container">
+                
+            </div>
+        </div>
+        <div class="footer">
+            
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <script src="script.js"></script>
+</body>
+</html>
