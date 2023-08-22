@@ -24,7 +24,7 @@
                     Add New Book
                 </div>
                 <div class="book-form-body">
-                    <form>
+                    <form id="myForm">
                         <div>
                             <input type="text" id="title" placeholder="Title">
                         </div>
@@ -34,6 +34,7 @@
                         </div>
                         <div>
                             <input type="number" id="pages" placeholder="Pages" min="1">
+                            <p id="pageError"></p>
                         </div>
                         <div class="add-book-check">
                             <label for="hasRead">Have you read it?</label>

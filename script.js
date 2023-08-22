@@ -7,10 +7,14 @@ const overlay = document.querySelector('.overlay');
 const bookIsRead = document.querySelector('.read-button');
 
 
-let title = document.getElementById('title');
-let author = document.getElementById('author');
-let pages = document.getElementById('pages');
-let hasRead = document.getElementById('hasRead');
+const myForm = document.getElementById('myForm');
+const title = document.getElementById('title');
+const author = document.getElementById('author');
+const pages = document.getElementById('pages');
+const hasRead = document.getElementById('hasRead');
+
+const pageError = document.getElementById('pageError');
+myForm.noValidate = true;
 
 let myLibrary = [];
 
@@ -21,6 +25,7 @@ openModalButtons.addEventListener('click', () => {
 overlay.addEventListener('click', () => {
     const modals = document.querySelector('.add-book-form.active');
     closeModal(modals);
+    //This is a new comment
 })
 
 /*bookIsRead.addEventListener('click', () => {
@@ -59,8 +64,7 @@ function Book(title, author, pages, hasRead) {
 addBookForm.addEventListener('submit', addBookToTheLibrary, false);
 
 function addBookToTheLibrary(event) {
-    event.preventDefault();
-    
+
     if(title.value == "" || author.value == "" || pages.value == "")
     {
         alert("Please complete all form fields");
@@ -74,6 +78,7 @@ function addBookToTheLibrary(event) {
         closeModal(modals)
         displayBookInLibrary();
     }
+    event.preventDefault();
 }
 
 

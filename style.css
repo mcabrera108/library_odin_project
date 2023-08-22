@@ -162,3 +162,7 @@
 .remove-button {
     background-color: rgb(206, 206, 206);
 }
+#pageError {
+    color: red;
+    font-size: .5rem;
+}
