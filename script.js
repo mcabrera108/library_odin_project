@@ -31,6 +31,9 @@ overlay.addEventListener('click', () => {
 /*bookIsRead.addEventListener('click', () => {
    //Do the Same as BookIsNotRead but do the opposite when switching classes
 })*/
+
+//Hello
+//world
 function openModal(modal)
 {
     if(modal == null) return
